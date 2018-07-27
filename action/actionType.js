@@ -1,0 +1,6 @@
+export const LOG_IN = "LOG_IN"
+export const LOG_OUT = "LOG_OUT"
+export const GET_PRODUCT = "GET_PRODUCT"
+export const GET_SINGLE_PRODUCT = "GET_SINGLE_PRODUCT"
+export const SET_BALANCE = "SET_BALANCE"
+export const SET_CART = "SET_CART"

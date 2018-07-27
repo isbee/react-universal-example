@@ -1,0 +1,8 @@
+# compiled output
+/build
+
+# Dependency directories
+/node_modules
+
+# npm install result
+package-lock.json

@@ -91,10 +91,17 @@ class Header extends React.Component {
 const mapStateToProps = (state) => {
   return {
       login: state.loginReducer.login,
+      logout: state.loginReducer.logout,
       ID: state.loginReducer.ID,
       balance: state.loginReducer.balance
   }
 }
 
-export default connect(mapStateToProps)(Header)
+const mapDispatchProps = (dispatch) => {
+  return {
+      handleLogout: () => { dispatch(actions.logout()) }
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchProps)(Header)
 
